@@ -4,4 +4,4 @@ Name: Harshita Rai
 <br>
 Roll No: 25223044
 <br>
-Branch: Masters of Computer Applications
+Branch: Master of Computer Applications
