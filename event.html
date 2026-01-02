@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+</head>
+<body>
+
+    <!-- Page Title -->
+    <h1>Technical Event Schedule & Registration</h1>
+
+    <!-- ========================= -->
+    <!-- Section 1: Event Schedule -->
+    <!-- ========================= -->
+
+    <h2>Event Schedule</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>Main Auditorium</td>
+            </tr>
+
+            <tr>
+                <td>11:30 AM - 01:00 PM</td>
+                <td>DSA Workshop</td>
+                <td>Lab 1</td>
+            </tr>
+
+            <tr>
+                <td>02:00 PM - 04:00 PM</td>
+                <td>Web Development Session</td>
+                <td>Seminar Hall</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ============================== -->
+    <!-- Section 2: Registration Form -->
+    <!-- ============================== -->
+
+    <h2>Event Registration Form</h2>
+
+    <form action="submit.html" method="post">
+
+        <!-- Name -->
+        <p>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name">
+        </p>
+
+        <!-- Email -->
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <!-- Age -->
+        <p>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age">
+        </p>
+
+        <!-- Date -->
+        <p>
+            <label for="date">Event Date:</label><br>
+            <input type="date" id="date" name="date">
+        </p>
+
+        <!-- Radio Buttons -->
+        <p>
+            Ticket Type:<br>
+            <label>
+                <input type="radio" name="ticket" value="student"> Student
+            </label><br>
+
+            <label>
+                <input type="radio" name="ticket" value="regular"> Regular
+            </label><br>
+
+            <label>
+                <input type="radio" name="ticket" value="vip"> VIP
+            </label>
+        </p>
+
+        <!-- Checkboxes -->
+        <p>
+            Workshop Preferences:<br>
+            <label>
+                <input type="checkbox" name="workshop" value="dsa"> DSA
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="workshop" value="web"> Web Development
+            </label><br>
+
+            <label>
+                <input type="checkbox" name="workshop" value="ai"> AI Basics
+            </label>
+        </p>
+
+        <!-- Textarea -->
+        <p>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+        </p>
+
+        <!-- Submit Button -->
+        <p>
+            <button type="submit">Register</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
