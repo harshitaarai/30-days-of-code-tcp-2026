@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+        <p>Play smart. Win stylishly.</p>
+    </header>
+
+    <main>
+        <div class="game-board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <div id="status"></div>
+
+        <button id="restart">Restart Game</button>
+    </main>
+
+    <footer>
+        <p>
+            Made with using HTML, CSS & JS
+            <br>
+            © 2026
+        </p>
+
+        <!-- SVG Decoration -->
+        <svg width="40" height="40" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="45" stroke="black" stroke-width="5" fill="none"/>
+            <line x1="20" y1="20" x2="80" y2="80" stroke="black" stroke-width="5"/>
+            <line x1="80" y1="20" x2="20" y2="80" stroke="black" stroke-width="5"/>
+        </svg>
+    </footer>
+
+    <!-- JS -->
+    <script src="index1.js"></script>
+</body>
+</html>

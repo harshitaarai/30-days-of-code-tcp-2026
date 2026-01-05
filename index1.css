@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #a24b9c);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin: 30px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,255,255,0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: rgba(255,255,255,0.35);
+    transform: scale(1.05);
+}
+
+.win {
+    animation: winGlow 1s infinite alternate;
+}
+
+.draw {
+    animation: drawFade 1s ease-in-out infinite;
+}
+
+@keyframes winGlow {
+    from { background-color: #4027cb; }
+    to { background-color: #3a10b9; }
+}
+
+@keyframes drawFade {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+#status {
+    margin: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #fae123;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #fde047;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+footer svg {
+    margin-top: 10px;
+    fill: white;
+}
